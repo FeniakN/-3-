@@ -1,0 +1,47 @@
+class Радіомодуль:
+    def handler(self):
+        return "Радіо"
+
+class Кнопки:
+    def handler(self):
+        return "Телефон"
+
+class Батарея:
+    def handler(self):
+        return "Телефон"
+
+class Екран:
+    def handler(self):
+        return "Планшет"
+
+class Процесор:
+    def handler(self):
+        return "Планшет"
+
+class Сенсор:
+    def handler(self):
+        return "Планшет"
+
+class Радіо:
+    pass
+
+class Телефон:
+    pass
+
+class Планшет:
+    pass
+
+радіомодуль = Радіомодуль()
+кнопки = Кнопки()
+батарея = Батарея()
+екран = Екран()
+процесор = Процесор()
+сенсор = Сенсор()
+радіо = Радіо()
+телефон = Телефон()
+планшет = Планшет()
+
+# Виклик обробників для класів "Радіо", "Телефон" і "Планшет"
+print(радіо.handler())    # Виведе: AttributeError: 'Радіо' object has no attribute 'handler'
+print(телефон.handler()) # Виведе: AttributeError: 'Телефон' object has no attribute 'handler'
+print(планшет.handler()) # Виведе: AttributeError: 'Планшет' object has no attribute 'handler'
