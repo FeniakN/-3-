@@ -1,0 +1,22 @@
+class Land:
+    def handler(self):
+        return "наземний"
+
+class Water:
+    def handler(self):
+        return "водний"
+
+class Boat:
+    pass
+
+class Gibrid:
+    pass
+
+land = Land()
+water = Water()
+boat = Boat()
+gibrid = Gibrid()
+
+# Виклик обробників для класів "Boat" і "Gibrid"
+print(boat.handler())    # Виведе: AttributeError: 'Boat' object has no attribute 'handler'
+print(gibrid.handler())  # Виведе: AttributeError: 'Gibrid' object has no attribute 'handler'
