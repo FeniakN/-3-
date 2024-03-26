@@ -1,0 +1,25 @@
+class Error:
+    def handler(self):
+        return "Error"
+
+class Success:
+    def handler(self):
+        return "Success"
+
+class Begin:
+    def handler(self):
+        return "Begin"
+
+class B:
+    def handler(self):
+        return "B"
+
+# Створення екземплярів класів
+error = Error()
+success = Success()
+begin = Begin()
+b = B()
+
+# Виклик обробників для класів "Begin" і "B"
+print(begin.handler())  # Виведе: Begin
+print(b.handler())      # Виведе: B
