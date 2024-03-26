@@ -1,0 +1,50 @@
+class Барабан:
+    def handler(self):
+        return "Ударні"
+
+class Бубон:
+    def handler(self):
+        return "Ударні"
+
+class Тромбон:
+    def handler(self):
+        return "Духові"
+
+class Флейта:
+    def handler(self):
+        return "Духові"
+
+class Орган:
+    def handler(self):
+        return "Клавішні"
+
+class Гармоніка:
+    def handler(self):
+        return "Духові"
+
+class Баян:
+    def handler(self):
+        return "Клавішні"
+
+class Рояль:
+    def handler(self):
+        return "Клавішні"
+
+барабан = Барабан()
+бубон = Бубон()
+тромбон = Тромбон()
+флейта = Флейта()
+орган = Орган()
+гармоніка = Гармоніка()
+баян = Баян()
+рояль = Рояль()
+
+# Виклик обробників для класів "Ударні", "Духові" і "Клавішні"
+print(барабан.handler())  # Виведе: "Ударні"
+print(бубон.handler())    # Виведе: "Ударні"
+print(тромбон.handler())  # Виведе: "Духові"
+print(флейта.handler())   # Виведе: "Духові"
+print(орган.handler())    # Виведе: "Клавішні"
+print(гармоніка.handler())# Виведе: "Духові"
+print(баян.handler())     # Виведе: "Клавішні"
+print(рояль.handler())    # Виведе: "Клавішні"
