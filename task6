@@ -1,0 +1,52 @@
+class Страсбург:
+    def handler(self):
+        return "Страсбург"
+
+class Тулуза:
+    def handler(self):
+        return "Тулуза"
+
+class Марсель:
+    def handler(self):
+        return "Марсель"
+
+class Бірмінгем:
+    def handler(self):
+        return "Бірмінгем"
+
+class Манчестер:
+    def handler(self):
+        return "Манчестер"
+
+class Канберра:
+    def handler(self):
+        return "Канберра"
+
+class Сідней:
+    def handler(self):
+        return "Сідней"
+
+class Мельбурн:
+    def handler(self):
+        return "Мельбурн"
+
+class Європа:
+    pass
+
+class Австралія:
+    pass
+
+стасбург = Страсбург()
+тулуза = Тулуза()
+марсель = Марсель()
+бірмінгем = Бірмінгем()
+манчестер = Манчестер()
+канберра = Канберра()
+сідней = Сідней()
+мельбурн = Мельбурн()
+європа = Європа()
+австралія = Австралія()
+
+# Виклик обробників для класів "Європа" та "Австралія"
+print(європа.handler())    # Виведе: AttributeError: 'Європа' object has no attribute 'handler'
+print(австралія.handler()) # Виведе: AttributeError: 'Австралія' object has no attribute 'handler'
