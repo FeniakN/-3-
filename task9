@@ -1,0 +1,34 @@
+class With_land:
+    def handler(self):
+        return "будинок з ділянкою"
+
+class Without_land:
+    def handler(self):
+        return "будинок без ділянки"
+
+class For_many_families:
+    def handler(self):
+        return "багатоквартирний будинок"
+
+class For_one_family:
+    def handler(self):
+        return "будинок для однієї родини"
+
+class Villets:
+    def handler(self):
+        return "Вілла"
+
+class Apartmens:
+    def handler(self):
+        return "Квартира"
+
+with_land = With_land()
+without_land = Without_land()
+for_many_families = For_many_families()
+for_one_family = For_one_family()
+villets = Villets()
+apartmens = Apartmens()
+
+# Виклик обробників для класів "Villets" і "Apartmens"
+print(villets.handler())    # Виведе: Вілла
+print(apartmens.handler())  # Виведе: Квартира
