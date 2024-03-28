@@ -7,10 +7,12 @@ class Water:
         return "водний"
 
 class Boat:
-    pass
+    def handler(self):
+        return "судно"
 
 class Gibrid:
-    pass
+    def handler(self):
+        return "гібрид"
 
 land = Land()
 water = Water()
@@ -18,5 +20,5 @@ boat = Boat()
 gibrid = Gibrid()
 
 # Виклик обробників для класів "Boat" і "Gibrid"
-print(boat.handler())    # Виведе: AttributeError: 'Boat' object has no attribute 'handler'
-print(gibrid.handler())  # Виведе: AttributeError: 'Gibrid' object has no attribute 'handler'
+print(boat.handler())    # Виведе: судно
+print(gibrid.handler())  # Виведе: гібрид
