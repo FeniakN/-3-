@@ -1,25 +1,25 @@
 class Error:
     def handler(self):
-        return "Error"
+        return "Помилка"
 
 class Success:
     def handler(self):
-        return "Success"
+        return "Успіх"
 
-class Begin:
+class Start:
     def handler(self):
-        return "Begin"
+        return "Початок"
 
 class B:
     def handler(self):
-        return "B"
+        return "Б"
 
 # Створення екземплярів класів
-error = Error()
-success = Success()
-begin = Begin()
+помилка = Error()
+успіх = Success()
+початок = Start()
 b = B()
 
-# Виклик обробників для класів "Begin" і "B"
-print(begin.handler())  # Виведе: Begin
-print(b.handler())      # Виведе: B
+# Виклик обробників для класів "Початок" і "В"
+print(початок.handler()) # Виведе: Початок
+print(b.handler()) # Виведе: Б
