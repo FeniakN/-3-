@@ -1,0 +1,44 @@
+class TwoFour:
+    def handler(self):
+        return "розмір 2/4"
+
+class FourEight:
+    def handler(self):
+        return "розмір 4/8"
+
+class ThreeEight:
+    def handler(self):
+        return "розмір 3/8"
+
+class FourFour:
+    def handler(self):
+        return "розмір 4/4"
+
+class ThreeFour:
+    def handler(self):
+        return "розмір 3/4"
+
+class SixEight:
+    def handler(self):
+        return "розмір 6/8"
+
+class Соната:
+    def handler(self):
+        return "Соната"
+
+class Полька:
+    def handler(self):
+        return "Полька"
+
+two_four = TwoFour()
+four_eight = FourEight()
+three_eight = ThreeEight()
+four_four = FourFour()
+three_four = ThreeFour()
+six_eight = SixEight()
+соната = Соната()
+полька = Полька()
+
+# Виклик обробників для класів "Соната" і "Полька"
+print(соната.handler())  # Виведе: Соната
+print(полька.handler())  # Виведе: Полька
