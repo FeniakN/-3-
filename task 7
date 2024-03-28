@@ -1,0 +1,32 @@
+class Herbivores:
+    def handler(self):
+        return "травоїдна"
+
+class Carnivores:
+    def handler(self):
+        return "хижа"
+
+class Warm_blooded:
+    def handler(self):
+        return "теплокровна"
+
+class Cool_blooded:
+    def handler(self):
+        return "холоднокровна"
+
+class Cobra:
+    pass
+
+class Brown_bear:
+    pass
+
+herbivores = Herbivores()
+carnivores = Carnivores()
+warm_blooded = Warm_blooded()
+cool_blooded = Cool_blooded()
+cobra = Cobra()
+brown_bear = Brown_bear()
+
+# Виклик обробників для класів "Cobra" і "Brown bear"
+print(cobra.handler())       # Виведе: AttributeError: 'Cobra' object has no attribute 'handler'
+print(brown_bear.handler())  # Виведе: AttributeError: 'Brown_bear' object has no attribute 'handler'
