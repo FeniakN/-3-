@@ -31,10 +31,12 @@ class Мельбурн:
         return "Мельбурн"
 
 class Європа:
-    pass
+    def handler(self):
+        return "Європа"
 
 class Австралія:
-    pass
+    def handler(self):
+        return "Австралія"
 
 стасбург = Страсбург()
 тулуза = Тулуза()
@@ -48,5 +50,6 @@ class Австралія:
 австралія = Австралія()
 
 # Виклик обробників для класів "Європа" та "Австралія"
-print(європа.handler())    # Виведе: AttributeError: 'Європа' object has no attribute 'handler'
-print(австралія.handler()) # Виведе: AttributeError: 'Австралія' object has no attribute 'handler'
+print(європа.handler())    # Виведе: Європа
+print(австралія.handler()) # Виведе: Австралія
+
